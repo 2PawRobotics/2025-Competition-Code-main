@@ -320,7 +320,8 @@ public class Constants {
     }
 
     public class VisionConstants {
-        public static final String frontLimelightName = "limelight-intake";
+        //public static final String frontLimelightName = "limelight-intake";
+        public static final String frontLimelightName = "limelight";
         public static final String backLimelightName = "limelight-shooter";
 
         public static final double targetAreaPercentThreshold = 0.15;
