@@ -16,7 +16,7 @@ public class ArcadeDriveCmd extends Command {
     private final SwerveSys swerveSys;
 
     /**
-     * Joysticks return DoubleSuppliers when the get methods are called
+     * Joysticks return the below DoubleSuppliers when the get methods are called
      * This is so that joystick getter methods can be passed in as a parameter but will continuously update, 
      * versus using a double which would only update when the constructor is called
      */
