@@ -20,6 +20,7 @@ import edu.wpi.first.wpilibj.DriverStation.Alliance;
 import frc.robot.Constants.CANDevices;
 import frc.robot.Constants.DriveConstants;
 import frc.robot.Constants.VisionConstants;
+import frc.robot.util.limelight.LimelightHelpers;
 import frc.robot.util.limelight.LimelightPoseEstimator;
 
 public class SwerveSys extends SubsystemBase {
@@ -143,6 +144,7 @@ public class SwerveSys extends SubsystemBase {
             Optional<Pose2d> limelightPose = limelightPoseEstimator.getRobotPose();
             if(limelightPose.isPresent()) {
                 poseEstimator.addVisionMeasurement(limelightPose.get(), limelightPoseEstimator.getCaptureTimestamp());
+                System.out.println("Tx is: " + LimelightHelpers.getTX(getName()));
             }
         }
     }
